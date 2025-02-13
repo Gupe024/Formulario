@@ -1,34 +1,45 @@
 <html>
 <head>
- <tittle><h1>Formulario de registro al congreso "Tecnologico"</h1><tittle>
+ <center>
+  <tittle><h1>Formulario de registro al congreso "Tecnologico"</h1><tittle>
+ </center>
 </head>
 
 <body>
+
+ <center>
  <form method = "get" action ="practica.php" style = "margin-left:20px"> 
+
   <p><h4>Nombre del alumno: <input type="text" id="nombre" name="nombre"/></h4></p>
   <p><h4>Nombre de la institucion: <input type="text" id="escuela" name="escuela"/></h4></p>
   <p><h4>Edad: <input type="number" id="edad" name="edad"/></h4></p>
-  <p><h4>Genero: <input type="radio" name="genero" value="Masculino" id="Masculino">Masculino</>
-<input type="radio" name="genero" value="Femenino" id="Femenino">Femenino</h4></p>
+  
+  <p><h4>Género: 
+     <input type="radio" name="genero" value="Masculino" id="Masculino">Masculino
+     <input type="radio" name="genero" value="Femenino" id="Femenino">Femenino
+   </p></h4>
 
-   <p><h4>Area de interes:</h4>
-<p><input type="checkbox" name="interes[]" value="Robotica" id="Robotica">Robotica</p>
-<p><input type="checkbox" name="interes[]" value="IA" id="IA">IA
-<p><input type="checkbox" name="interes[]" value="Programacion" id="Programacion">Programacion
+  <h4>Area de interes:</h4>
+     <p><input type="checkbox" name="interes[]" value="Robotica" id="Robotica">Robotica</p>
+     <p><input type="checkbox" name="interes[]" value="IA" id="IA">IA</p>
+     <p><input type="checkbox" name="interes[]" value="Programacion" id="Programacion">Programacion</p>
 
-<p><h4>Fecha de asistencia: <input type="date" id="date" name="date"/></h4></p>
+  <p><h4>Fecha de asistencia: <input type="date" id="date" name="date"/></h4></p>
 
-<p><h4>¿Cuantos dias asistiras?</h4></p>
-<select name="asistencias">
+  <h4>Dias en los que se asistira</h4>
+   <select name="asistencias">
 	<option value="">Ninguno</option>
 	<option value="1">1</option>
  	<option value="2">2</option>
  	<option value="3">3</option>
-</select>
-<p><h4><h4>Ingresar correo electronico: <input type="email" id="email" name="email"/></h4></p>
-<button type="submit">Enviar</button> 
-<button type="reset">Cancelar</button>
-</form>
-</body>
+   </select>
 
+  <p><h4><h4>Ingresar correo electronico: <input type="email" id="email" name="email"/></h4></p>
+  <button type="submit">Enviar</button> 
+  <button type="reset">Cancelar</button>
+
+</form>
+</center>
+
+</body>
 </html>
